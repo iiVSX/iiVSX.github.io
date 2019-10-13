@@ -1,0 +1,101 @@
+<html>
+	<head>
+		<title>iiVSX_LOL</title>
+		<style>
+			body{
+				font-family: "TimesNewRoman", Times, serif;
+			}
+			#bg{
+				width:100%;
+				height:auto;
+			}
+			#bg::after{
+				content:"";
+				background:url(bg_lol.jpg);
+				top:0;
+				left:0;
+				bottom:0;
+				right:0;
+				position:absolute;
+				opacity:0.3;
+				z-index:-1;
+				background-size:cover;
+				background-position:center;
+				background-attachment:scroll;
+			}
+			#container{
+				margin-left:40px;
+				margin-top:40px;
+				width:100%;
+			}
+			#icon{
+				float:left;
+				padding:10px;
+				width:150px;
+				height:150px;
+			}
+			#tier li{
+				display:inline;
+				border:1px solid black;
+				border-radius:30%;
+				padding:5px;
+			}
+			#footer{
+				width:100%;
+				height:0px;
+				clear:both;
+			}
+			#rank{
+				width:300px;
+				height:160px;
+				margin-top:50px;
+				margin-right:50px;
+				position:relative;
+				background-color:white;
+				border: 1px solid black;
+			}
+		</style>
+	</head>
+	<body>
+		<a href="index.html" style="margin:10px; padding:4px;"><img src="home.jpg" width="50px" height="50px"><img></a>
+		<div id='bg'/>
+		<div id='container'>
+			<div>
+				<img id="icon" src="icon.png" alt="icon">
+				<br/>
+				<h2>너네나가</h2>
+				<p>래더 랭킹 837,042위 (상위 22.51%)</p>
+				<ul id='tier'>
+					<li style="background-color:silver">S3 Silver</li>
+					<li style="background-color:gold">S4 Gold</li>
+					<li style="background-color:brown">S5 Bronze</li>
+					<li style="background-color:silver">S6 Silver</li>
+					<li style="background-color:gold">S7 Gold</li>
+					<li style="background-color:gold">S8 Gold</li>
+				</ul>
+			</div>
+			<div id ='footer'></div>
+			<div style="display:inline-block;">
+				<div id ='rank'>
+					<img src="tier.png" alt="tier" style="float:left; padding:20px; width:100px; height:120px;">
+					<p>솔로랭크</p>
+					<h3 style="color:skyblue;">Gold 1</h3>
+					<p>29 LP / 127승 116패</p>
+					<p>승률 52%</p>
+					
+				</div>
+				<div id ='rank'>
+					<img src="tier.png" alt="tier" style="float:left; padding:20px; width:100px; height:120px;">
+					<p>자유 5:5 랭크</p>
+					<h3 style="color:skyblue;">Gold 1</h3>
+					<p>89 LP / 66승 65패</p>
+					<p>승률 50%</p>
+				</div>
+			</div>
+			<div id ='HighLights' style="display:inline-block">
+				<h2>HighLights</h2>
+				<video src="mad_movie.webm" width="600" height="400" controls></video>
+			</div>
+		</div>
+	</body>
+</html>

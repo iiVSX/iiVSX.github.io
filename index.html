@@ -1,28 +1,42 @@
-<!DOCTYPE html>
 <html>
 	<head>
-		<title>iiVSX</title>
 		<style>
-			ul#menu{
-				list-style:none;
-				text-align:center;
-				border-top:1px solid black; border-bottom:1px solid black; padding 10px 0;
+			body{
+				background-image:url("bg.jpg");
+				background-repeat:no-repeat;
+				background-attachment:fixed;
+				background-size:cover;
+				background-position:center;
 			}
-			ul#menu li {
+			
+			#container{
+				position:relative;
+				top:70%;
+				display:flex;
+				justify-content:center;
+				align-items:center;
+			}
+			#container div{
+				padding:40px;
 				display:inline;
-				text-transform:uppercase;
-				padding:0 10px; letter-spacing:10px;
+				position:relative;
 			}
-			ul#menu li a:hoover{text-decoration:underline;}
+			
+		
 		</style>
 	</head>
 	<body>
-		<ul id='menu'>
-			<li><a href="#">about</a></li>
-			<li><a href="#">Education</a></li>
-			<li><a href="#">work&leadership experience</a></li>
-			<li><a href="#">internship</a></li>
-			<li><a href="#">project</a></li>
-		</ul>
+		<div id = 'container'>
+			<div>
+				<a id="lol" href="lol.html" target="_self"><img src="lol.jpg" style="width: 70px; height:70px"></img></a>
+			</div>
+			<div>
+				<a id="maedup" href="maedup.html" target="_self"><img src="maedup.png" style="width: 70px; height:70px"></img></a>
+			</div>
+			<div>
+				<a id="about" href="about.html" target="_self"><img src="SKKU.png" style="width: 70px; height:70px"></img></a>
+			</div>
+		</div>
+		
 	</body>
 </html>
